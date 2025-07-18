@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notices>
+    <notice id="1">
+        <title>Mid-term Examination Schedule</title>
+        <date>2025-07-20</date>
+        <description>Mid-term examinations for all branches will be conducted from July 25th to August 5th, 2025. Students are required to bring their hall tickets and identity cards. No electronic devices are allowed in the examination hall. Please check the detailed timetable on the department notice board.</description>
+        <branch>all_branches</branch>
+        <importance>high</importance>
+    </notice>
+    
+    <notice id="2">
+        <title>Workshop on Machine Learning</title>
+        <date>2025-07-18</date>
+        <description>A two-day workshop on "Introduction to Machine Learning and Deep Learning" will be conducted on July 22nd and 23rd, 2025. The workshop will cover fundamental concepts, practical implementations, and real-world applications. Registration is mandatory and limited to 50 students. Please contact the department office for registration.</description>
+        <branch>cse</branch>
+        <importance>medium</importance>
+    </notice>
+    
+    <notice id="3">
+        <title>Library Renovation Notice</title>
+        <date>2025-07-15</date>
+        <description>The central library will be closed for renovation from July 28th to August 10th, 2025. During this period, students can access digital resources online and use the departmental libraries. Books can be returned at the temporary counter near the main entrance. Extended borrowing period is granted for all current loans.</description>
+        <branch>all_branches</branch>
+        <importance>urgent</importance>
+    </notice>
+    
+    <notice id="4">
+        <title>Industrial Visit - Robotics Lab</title>
+        <date>2025-07-19</date>
+        <description>Final year Mechanical Engineering students are invited for an industrial visit to Advanced Robotics Manufacturing Unit on July 30th, 2025. The visit will provide insights into modern manufacturing processes and automation systems. Transportation will be provided by the college. Students must submit consent forms by July 25th.</description>
+        <branch>mechanical</branch>
+        <importance>medium</importance>
+    </notice>
+    
+    <notice id="5">
+        <title>Network Maintenance - Campus WiFi</title>
+        <date>2025-07-17</date>
+        <description>Campus-wide network maintenance will be performed on July 21st, 2025, from 11:00 PM to 3:00 AM. During this period, WiFi services and internet connectivity may be intermittent. Students are advised to download necessary materials beforehand. Emergency contact: IT Help Desk - 9876543210.</description>
+        <branch>all_branches</branch>
+        <importance>critical</importance>
+    </notice>
+    
+    <notice id="6">
+        <title>IEEE Student Chapter Meeting</title>
+        <date>2025-07-16</date>
+        <description>Monthly IEEE Student Chapter meeting will be held on July 24th, 2025, at 4:00 PM in the ECE seminar hall. Agenda includes discussion on upcoming technical events, project presentations, and membership drive. All ECE students are encouraged to attend. Light refreshments will be provided.</description>
+        <branch>ece</branch>
+        <importance>low</importance>
+    </notice>
+<notice id="7"><title>Test Notice - Direct Add</title><date>2025-07-18</date><description>This is a test notice added directly to verify the XML writing functionality.</description><branch>all_branches</branch><importance>medium</importance></notice><notice id="8"><title>testing</title><date>2025-07-18</date><description>testing the workflow</description><branch>eee</branch><importance>high</importance></notice></notices>

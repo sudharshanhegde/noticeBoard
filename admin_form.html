@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notice Board Admin - Add Notice</title>
+    <link rel="stylesheet" href="admin_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Notice Board Administration</h1>
+            <p>Add New Notice</p>
+        </header>
+
+        <main>
+            <form id="noticeForm" action="add_notice.cgi" method="POST" class="notice-form">
+                <div class="form-group">
+                    <label for="title">Notice Title *</label>
+                    <input type="text" id="title" name="title" required maxlength="100" 
+                           placeholder="Enter notice title">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Notice Date *</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description *</label>
+                    <textarea id="description" name="description" required rows="6" 
+                              placeholder="Enter detailed description of the notice"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="branch">Branch *</label>
+                        <select id="branch" name="branch" required>
+                            <option value="">Select Branch</option>
+                            <option value="cse">Computer Science & Engineering (CSE)</option>
+                            <option value="ai">Artificial Intelligence (AI)</option>
+                            <option value="ise">Information Science & Engineering (ISE)</option>
+                            <option value="mechanical">Mechanical Engineering</option>
+                            <option value="civil">Civil Engineering</option>
+                            <option value="ece">Electronics & Communication Engineering (ECE)</option>
+                            <option value="eee">Electrical & Electronics Engineering (EEE)</option>
+                            <option value="all_branches">All Branches</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="importance">Importance Level *</label>
+                        <select id="importance" name="importance" required>
+                            <option value="">Select Importance</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                            <option value="critical">Critical</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <span>📋</span> Add Notice
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <span>🔄</span> Reset Form
+                    </button>
+                    <button type="button" class="btn btn-cancel" onclick="window.history.back()">
+                        <span>❌</span> Cancel
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Notice Board Administration System</p>
+        </footer>
+    </div>
+
+    <script>
+        // Set default date to today
+        document.getElementById('date').valueAsDate = new Date();
+        
+        // Form validation
+        document.getElementById('noticeForm').addEventListener('submit', function(e) {
+            const title = document.getElementById('title').value.trim();
+            const description = document.getElementById('description').value.trim();
+            const branch = document.getElementById('branch').value;
+            const importance = document.getElementById('importance').value;
+            
+            if (!title || !description || !branch || !importance) {
+                e.preventDefault();
+                alert('Please fill in all required fields.');
+                return false;
+            }
+            
+            if (title.length < 3) {
+                e.preventDefault();
+                alert('Title must be at least 3 characters long.');
+                return false;
+            }
+            
+            if (description.length < 10) {
+                e.preventDefault();
+                alert('Description must be at least 10 characters long.');
+                return false;
+            }
+            
+            return confirm('Are you sure you want to add this notice?');
+        });
+    </script>
+</body>
+</html>

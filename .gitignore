@@ -1,0 +1,78 @@
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Log files
+*.log
+error.log
+access.log
+
+# Session files
+/tmp/
+*.sess
+
+# XAMPP specific files
+.htaccess
+php_errors.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows specific
+desktop.ini
+*.lnk
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+temp/
+tmp/
+*.temp
+
+# Test files (optional - remove if you want to include test files)
+test_*.pl
+test_*.cgi
+*_test.*
+
+# Archive files that might be generated
+archive.xml.bak
+notices.xml.bak
+
+# Perl specific
+*.pm.bak
+*.pl.bak
+*.cgi.bak
+
+# Local configuration files (if any)
+config.local
+*.local
+
+# Database backups
+*.sql.bak
+*.db.bak
+
+# Documentation build files
+docs/_build/
+*.pdf
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Environment files
+.env
+.env.local
+.env.production
